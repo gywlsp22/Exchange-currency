@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #5fbaa7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 10px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.currency {
+  padding: 40px 0;
+}
+
+.currency select {
+  padding: 10px 20px 10px 10px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.currency input {
+  text-align: right;
+  font-size: 28px;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 5px;
+
+}
+
+.swap-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: var(--primary-color);
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+section:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+@media(max-width:600px) {
+  .currency input {
+    width: 200px;
+  }
+
+}
